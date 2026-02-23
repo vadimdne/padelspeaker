@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://padelspeaker.com/sitemap.xml

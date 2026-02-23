@@ -1,0 +1,12 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Playwright screenshots (temp, deleted after use)
+screenshots/
+
+# Claude
+.claude/
+.playwright-mcp
+plan.md
