@@ -1,164 +1,319 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Padel Speaker: Poängannonsör — Apple Watch-app</title>
-  <meta name="description" content="Padel Speaker annonserar ditt poängläge högt via en Bluetooth-högtalare. Följ games och set på Apple Watch — utan telefon.">
-  <meta name="robots" content="index, follow">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Padel Speaker: Poängannonsör — Apple Watch-app</title>
+        <meta name="description" content="Padel Speaker annonserar ställningen högt via en Bluetooth-högtalare. Följ games och set på Apple Watch — utan telefon." />
+        <meta name="robots" content="index, follow" />
 
-  <!-- hreflang alternates -->
-  <link rel="alternate" hreflang="en" href="https://padelspeaker.com/">
-  <link rel="alternate" hreflang="es" href="https://padelspeaker.com/es/">
-  <link rel="alternate" hreflang="fr" href="https://padelspeaker.com/fr/">
-  <link rel="alternate" hreflang="sv" href="https://padelspeaker.com/sv/">
-  <link rel="alternate" hreflang="it" href="https://padelspeaker.com/it/">
-  <link rel="alternate" hreflang="nl" href="https://padelspeaker.com/nl/">
-  <link rel="alternate" hreflang="pt" href="https://padelspeaker.com/pt/">
-  <link rel="alternate" hreflang="x-default" href="https://padelspeaker.com/">
+        <!-- hreflang alternates -->
+        <link rel="alternate" hreflang="en" href="https://padelspeaker.com/" />
+        <link
+            rel="alternate"
+            hreflang="es"
+            href="https://padelspeaker.com/es/"
+        />
+        <link
+            rel="alternate"
+            hreflang="fr"
+            href="https://padelspeaker.com/fr/"
+        />
+        <link
+            rel="alternate"
+            hreflang="sv"
+            href="https://padelspeaker.com/sv/"
+        />
+        <link
+            rel="alternate"
+            hreflang="it"
+            href="https://padelspeaker.com/it/"
+        />
+        <link
+            rel="alternate"
+            hreflang="nl"
+            href="https://padelspeaker.com/nl/"
+        />
+        <link
+            rel="alternate"
+            hreflang="pt"
+            href="https://padelspeaker.com/pt/"
+        />
+        <link
+            rel="alternate"
+            hreflang="x-default"
+            href="https://padelspeaker.com/"
+        />
 
-  <!-- OpenGraph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://padelspeaker.com/sv/">
-  <meta property="og:title" content="Padel Speaker: Poängannonsör — Apple Watch-app">
-  <meta property="og:description" content="Padel Speaker annonserar ditt poängläge högt via en Bluetooth-högtalare. Följ games och set på Apple Watch — utan telefon.">
-  <meta property="og:image" content="https://padelspeaker.com/media/padel%20speaker%20icon.jpg">
-  <meta property="og:image:width" content="1024">
-  <meta property="og:image:height" content="1024">
+        <!-- OpenGraph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://padelspeaker.com/sv/" />
+        <meta property="og:title" content="Padel Speaker: Poängannonsör — Apple Watch-app" />
+        <meta property="og:description" content="Padel Speaker annonserar ställningen högt via en Bluetooth-högtalare. Följ games och set på Apple Watch — utan telefon." />
+        <meta
+            property="og:image"
+            content="https://padelspeaker.com/media/og-card.png"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Padel Speaker: Poängannonsör — Apple Watch-app">
-  <meta name="twitter:description" content="Padel Speaker annonserar ditt poängläge högt via en Bluetooth-högtalare. Följ games och set på Apple Watch — utan telefon.">
-  <meta name="twitter:image" content="https://padelspeaker.com/media/padel%20speaker%20icon.jpg">
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Padel Speaker: Poängannonsör — Apple Watch-app" />
+        <meta name="twitter:description" content="Padel Speaker annonserar ställningen högt via en Bluetooth-högtalare. Följ games och set på Apple Watch — utan telefon." />
+        <meta
+            name="twitter:image"
+            content="https://padelspeaker.com/media/og-card.png"
+        />
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://padelspeaker.com/sv/">
+        <!-- Canonical -->
+        <link rel="canonical" href="https://padelspeaker.com/sv/" />
 
-  <link rel="icon" type="image/jpeg" href="../media/padel%20speaker%20icon.jpg">
-  <link rel="apple-touch-icon" href="../media/padel%20speaker%20icon.jpg">
+        <link
+            rel="icon"
+            type="image/jpeg"
+            href="../media/padel%20speaker%20icon.jpg"
+        />
+        <link
+            rel="apple-touch-icon"
+            href="../media/padel%20speaker%20icon.jpg"
+        />
 
-  <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-
-  <!-- ── Header ─────────────────────────────────────────── -->
-  <header class="site-header" role="banner">
-    <div class="header-inner">
-      <a class="header-brand" href="../" aria-label="Padel Speaker home">
-        <img src="../media/padel%20speaker%20icon.jpg" alt="Padel Speaker icon" width="36" height="36">
-        Padel Speaker
-      </a>
-      <nav class="lang-switcher" aria-label="Language selector">
-        <a href="../" hreflang="en"  aria-label="English">🇬🇧</a>
-        <a href="../es/" hreflang="es"  aria-label="Español">🇪🇸</a>
-        <a href="../fr/" hreflang="fr"  aria-label="Français">🇫🇷</a>
-        <a href="../sv/" hreflang="sv" class="active" aria-label="Svenska">🇸🇪</a>
-        <a href="../it/" hreflang="it"  aria-label="Italiano">🇮🇹</a>
-        <a href="../nl/" hreflang="nl"  aria-label="Nederlands">🇳🇱</a>
-        <a href="../pt/" hreflang="pt"  aria-label="Português">🇵🇹</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-
-    <!-- ── Hero ───────────────────────────────────────────── -->
-    <section class="hero" aria-label="Hero">
-      <div class="hero-waves" aria-hidden="true" role="presentation"></div>
-      <img class="hero-img-speaker" aria-hidden="true" src="../media/speaker-with-flashes.png"
-           alt="" width="300" height="320" loading="lazy">
-      <div class="hero-inner">
-
-        <div class="hero-text">
-          <h1 class="hero-headline">Padel Score,<br><span>Högt och Klart.</span></h1>
-          <p class="hero-sub">Padel Speaker annonserar varje poäng, game och set via din Bluetooth-högtalare — så du kan fokusera på banan, inte på resultattavlan.</p>
-          <a class="cta-btn" href="https://apps.apple.com/us/app/padel-speaker-score-announcer/id6754638147" aria-label="Ladda ner Padel Speaker på App Store">
-            <img src="../media/App_Store_Badge-white.svg" alt="Ladda ner på App Store" width="156" height="52">
-          </a>
-        </div>
-
-        <div class="hero-images" aria-hidden="true">
-          <div class="hero-screens">
-            <img class="hero-img-iphone" src="../media/iphone-match-score.png"
-                 alt="iPhone showing padel match score" width="210" height="420" loading="lazy">
-            <img class="hero-img-watch" src="../media/watch-game-score.png"
-                 alt="Apple Watch showing game score" width="155" height="265" loading="lazy">
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ── Features ───────────────────────────────────────── -->
-    <section class="features" aria-label="Features">
-      <div class="features-inner">
-        <h2 class="section-title">Allt på Din Handled</h2>
-        <div class="features-grid" role="list">
-
-          <article class="feature-card" role="listitem">
-            <div class="feature-img-wrap">
-              <img src="../media/watch-bt-connect.png"
-                   alt="Apple Watch Bluetooth connect screen" width="140" height="165" loading="lazy">
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body>
+        <!-- ── Header ─────────────────────────────────────────── -->
+        <header class="site-header" role="banner">
+            <div class="header-inner">
+                <a
+                    class="header-brand"
+                    href="../"
+                    aria-label="Padel Speaker home"
+                >
+                    <img
+                        src="../media/padel%20speaker%20icon.jpg"
+                        alt="Padel Speaker icon"
+                        width="36"
+                        height="36"
+                    />
+                    Padel Speaker
+                </a>
+                <nav class="lang-switcher" aria-label="Language selector">
+                    <a
+                        href="../"
+                        hreflang="en"
+                        
+                        aria-label="English"
+                        >🇬🇧</a
+                    >
+                    <a
+                        href="../es/"
+                        hreflang="es"
+                        
+                        aria-label="Español"
+                        >🇪🇸</a
+                    >
+                    <a
+                        href="../fr/"
+                        hreflang="fr"
+                        
+                        aria-label="Français"
+                        >🇫🇷</a
+                    >
+                    <a
+                        href="../sv/"
+                        hreflang="sv"
+                        class="active"
+                        aria-label="Svenska"
+                        >🇸🇪</a
+                    >
+                    <a
+                        href="../it/"
+                        hreflang="it"
+                        
+                        aria-label="Italiano"
+                        >🇮🇹</a
+                    >
+                    <a
+                        href="../nl/"
+                        hreflang="nl"
+                        
+                        aria-label="Nederlands"
+                        >🇳🇱</a
+                    >
+                    <a
+                        href="../pt/"
+                        hreflang="pt"
+                        
+                        aria-label="Português"
+                        >🇵🇹</a
+                    >
+                </nav>
             </div>
-            <h3>Anslut BT-högtalare</h3>
-            <p>Para ihop vilken Bluetooth-högtalare som helst direkt från din Apple Watch på några sekunder.</p>
-          </article>
+        </header>
 
-          <article class="feature-card" role="listitem">
-            <div class="feature-img-wrap">
-              <img src="../media/watch-settings.png"
-                   alt="Apple Watch settings screen" width="140" height="165" loading="lazy">
+        <main>
+            <!-- ── Hero ───────────────────────────────────────────── -->
+            <section class="hero" aria-label="Hero">
+                <div
+                    class="hero-waves"
+                    aria-hidden="true"
+                    role="presentation"
+                ></div>
+                <img
+                    class="hero-img-speaker"
+                    aria-hidden="true"
+                    src="../media/speaker-with-flashes.png"
+                    alt=""
+                    width="300"
+                    height="320"
+                    loading="lazy"
+                />
+                <div class="hero-inner">
+                    <div class="hero-text">
+                        <h1 class="hero-headline">
+                            Ställningen,<br /><span
+                                >Högt och Klart.</span
+                            >
+                        </h1>
+                        <p class="hero-sub">Padel Speaker annonserar varje poäng, game och set via din Bluetooth-högtalare — så du kan fokusera på banan, inte på ställningen.</p>
+                        <a
+                            class="cta-btn"
+                            href="https://apps.apple.com/us/app/padel-speaker-score-announcer/id6754638147"
+                            aria-label="Ladda ner Padel Speaker på App Store"
+                        >
+                            <img
+                                src="../media/App_Store_Badge-white.svg"
+                                alt="Ladda ner på App Store"
+                                width="156"
+                                height="52"
+                            />
+                        </a>
+                    </div>
+
+                    <div class="hero-images" aria-hidden="true">
+                        <div class="hero-screens">
+                            <img
+                                class="hero-img-iphone"
+                                src="../media/iphone-match-score.png"
+                                alt="iPhone showing padel match score"
+                                width="210"
+                                height="420"
+                                loading="lazy"
+                            />
+                            <img
+                                class="hero-img-watch"
+                                src="../media/watch-game-score.png"
+                                alt="Apple Watch showing game score"
+                                width="155"
+                                height="265"
+                                loading="lazy"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── Features ───────────────────────────────────────── -->
+            <section class="features" aria-label="Features">
+                <div class="features-inner">
+                    <h2 class="section-title">Allt på Din Handled</h2>
+                    <div class="features-grid" role="list">
+                        <article class="feature-card" role="listitem">
+                            <div class="feature-img-wrap">
+                                <img
+                                    src="../media/watch-bt-connect.png"
+                                    alt="Apple Watch Bluetooth connect screen"
+                                    width="140"
+                                    height="165"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <h3>Anslut BT-högtalare</h3>
+                            <p>Para ihop vilken Bluetooth-högtalare som helst direkt från din Apple Watch på några sekunder.</p>
+                        </article>
+
+                        <article class="feature-card" role="listitem">
+                            <div class="feature-img-wrap">
+                                <img
+                                    src="../media/watch-settings.png"
+                                    alt="Apple Watch settings screen"
+                                    width="140"
+                                    height="165"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <h3>Konfigurera Match</h3>
+                            <p>Ställ in matchformatet — games, set, tiebreak — direkt från handleden.</p>
+                        </article>
+
+                        <article class="feature-card" role="listitem">
+                            <div class="feature-img-wrap">
+                                <img
+                                    src="../media/watch-game-score.png"
+                                    alt="Apple Watch game score screen"
+                                    width="140"
+                                    height="165"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <h3>Följ Gameresultatet</h3>
+                            <p>Ställningen annonseras automatiskt efter varje poäng. Handsfree, utan krångel.</p>
+                        </article>
+
+                        <article class="feature-card" role="listitem">
+                            <div class="feature-img-wrap">
+                                <img
+                                    src="../media/watch-set-score.png"
+                                    alt="Apple Watch set score screen"
+                                    width="140"
+                                    height="165"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <h3>Följ Setresultaten</h3>
+                            <p>Se matchens fullständiga set-för-set-förlopp med en blick.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── CTA Banner ─────────────────────────────────────── -->
+            <section class="cta-banner" aria-label="Download call to action">
+                <div class="cta-banner-inner">
+                    <h2>Redo att Höra Varje Poäng?</h2>
+                    <p>Ladda ner för Apple Watch och anslut din högtalare.</p>
+                    <a
+                        class="cta-btn"
+                        href="https://apps.apple.com/us/app/padel-speaker-score-announcer/id6754638147"
+                        aria-label="Ladda ner Padel Speaker på App Store"
+                    >
+                        <img
+                            src="../media/App_Store_Badge-white.svg"
+                            alt="Ladda ner på App Store"
+                            width="156"
+                            height="52"
+                        />
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- ── Footer ─────────────────────────────────────────── -->
+        <footer class="site-footer" role="contentinfo">
+            <div class="footer-inner">
+                <span>© 2026 Cheese Wheels Apps OU</span>
+                <nav class="footer-links" aria-label="Footer links">
+                    <a
+                        href="https://cheesewheelsapps.com/privacy"
+                        rel="noopener"
+                        >Integritetspolicy</a
+                    >
+                    <a href="https://cheesewheelsapps.com/terms" rel="noopener"
+                        >Villkor</a
+                    >
+                </nav>
             </div>
-            <h3>Konfigurera Match</h3>
-            <p>Ställ in matchformatet — games, set, tiebreak — direkt från handleden.</p>
-          </article>
-
-          <article class="feature-card" role="listitem">
-            <div class="feature-img-wrap">
-              <img src="../media/watch-game-score.png"
-                   alt="Apple Watch game score screen" width="140" height="165" loading="lazy">
-            </div>
-            <h3>Följ Gameresultatet</h3>
-            <p>Resultatet annonseras automatiskt efter varje poäng. Handsfree, utan krångel.</p>
-          </article>
-
-          <article class="feature-card" role="listitem">
-            <div class="feature-img-wrap">
-              <img src="../media/watch-set-score.png"
-                   alt="Apple Watch set score screen" width="140" height="165" loading="lazy">
-            </div>
-            <h3>Följ Setresultaten</h3>
-            <p>Se matchens fullständiga set-för-set-förlopp med en blick.</p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ── CTA Banner ─────────────────────────────────────── -->
-    <section class="cta-banner" aria-label="Download call to action">
-      <div class="cta-banner-inner">
-        <h2>Redo att Höra Varje Poäng?</h2>
-        <p>Ladda ner för Apple Watch och anslut din högtalare.</p>
-        <a class="cta-btn" href="https://apps.apple.com/us/app/padel-speaker-score-announcer/id6754638147" aria-label="Ladda ner Padel Speaker på App Store">
-          <img src="../media/App_Store_Badge-white.svg" alt="Ladda ner på App Store" width="156" height="52">
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ── Footer ─────────────────────────────────────────── -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-inner">
-      <span>© 2026 Cheese Wheels Apps OU</span>
-      <nav class="footer-links" aria-label="Footer links">
-        <a href="https://cheesewheelsapps.com/privacy" rel="noopener">Integritetspolicy</a>
-        <a href="https://cheesewheelsapps.com/terms" rel="noopener">Villkor</a>
-      </nav>
-    </div>
-  </footer>
-
-</body>
+        </footer>
+    </body>
 </html>
